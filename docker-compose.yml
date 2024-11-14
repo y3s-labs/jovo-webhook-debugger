@@ -1,0 +1,17 @@
+version: '3.5'
+
+services:
+  jovo-webhook-debugger:
+    working_dir: /usr/src/app
+    container_name: jovo-webhook-debugger
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "4000"
+    command: 'npm run start:backend'
+    tty: true
+    env_file: .env
+
+

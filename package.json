@@ -1,0 +1,20 @@
+{
+  "name": "jovo-webhook-debugger",
+  "private": true,
+  "version": "4.0.13",
+  "description": "",
+  "scripts": {
+    "start:backend": "cd backend && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jovotech/jovo-webhook-debugger.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jovotech/jovo-webhook-debugger/issues"
+  },
+  "homepage": "https://github.com/jovotech/jovo-webhook-debugger#readme",
+  "devDependencies": {}
+}
