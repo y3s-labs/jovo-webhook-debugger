@@ -12,7 +12,7 @@ COPY .prettierrc.js .prettierrc.js
 
 # Install dependencies and compile the files
 RUN cd /usr/src/app/backend && npm ci && npm run build
-RUN cd /usr/src/app/frontend && npm ci && npm run build:prod && npm prune --production
+RUN cd /usr/src/app/frontend && npm ci && npm run build:prod && npm prune --omit=dev
 
 EXPOSE 4000
 
