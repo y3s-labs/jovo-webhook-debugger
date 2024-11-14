@@ -1,5 +1,10 @@
 FROM node:16-alpine AS backend-builder
 
+ARG NODE_ENV
+ENV NODE_ENV=${NODE_ENV}
+
+ARG VUE_APP_WEBHOOK_URL
+ENV VUE_APP_WEBHOOK_URL=${VUE_APP_WEBHOOK_URL}
 # Create app directory
 WORKDIR /usr/src/app
 

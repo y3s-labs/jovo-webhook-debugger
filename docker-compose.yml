@@ -7,6 +7,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        NODE_ENV: production
+        VUE_APP_WEBHOOK_URL: ${VUE_APP_WEBHOOK_URL}
     restart: always
     ports:
       - "4000"
