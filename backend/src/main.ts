@@ -19,16 +19,16 @@ process.on('uncaughtException', (e) => {
 async function bootstrap() {
   let httpsOptions: HttpsOptions | null = null;
   const port = 4000;
-  if (process.env.NODE_ENV === 'production') {
-    httpsOptions = {
-      cert: await promises.readFile('<path to cert>'),
-      key: await promises.readFile('<path to key>'),
-    };
-  }
+  // if (process.env.NODE_ENV === 'production') {
+  //   httpsOptions = {
+  //     cert: await promises.readFile('<path to cert>'),
+  //     key: await promises.readFile('<path to key>'),
+  //   };
+  // }
 
   const app = await NestFactory.create(AppModule, {
     cors: true,
-    httpsOptions,
+    // httpsOptions,
   });
   app.use(
     json({
