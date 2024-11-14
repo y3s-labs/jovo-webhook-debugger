@@ -22,10 +22,6 @@ export default class App extends Vue {
   created() {
     return this.$store.dispatch('connectSocket', this.$route.params.id);
   }
-
-   mounted() {
-    console.log('mounted app');
-  }
 }
 </script>
 <style>

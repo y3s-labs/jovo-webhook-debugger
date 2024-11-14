@@ -142,10 +142,6 @@ export default class Root extends Vue {
     return noDetailsDifference > allDetailsDifference;
   }
 
-  mounted() {
-    console.log('mounted root');
-  }
-
   toggleExpandedDetails() {
     if (this.mostDetailsExpanded) {
       this.$store.commit('setExpandedJovoUpdateIndices', []);

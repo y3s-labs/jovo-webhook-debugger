@@ -6,19 +6,10 @@ Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
   {
-    path: '/',
-    name: 'Root',
-    component: Root
-  },
-  {
     path: '/:id',
-    name: 'RootWithId',
-    component: Root
+    name: 'Root',
+    component: Root,
   },
-  {
-    path: '*',
-    redirect: '/'  // Redirect any unmatched routes to home
-  }
 ];
 
 const router = new VueRouter({
