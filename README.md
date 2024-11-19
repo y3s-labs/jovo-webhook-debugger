@@ -58,8 +58,6 @@ If you want to test your application with a public webhook URL, you can use [ngr
 ngrok http 4000
 ```
 
-This will give you a public URL using ngrok.
-
 Update the `webhookUrl` in your Jovo Debugger plugin configuration in your `app.dev.ts` file.
 
 ```javascript
