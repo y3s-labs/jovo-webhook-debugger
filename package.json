@@ -4,7 +4,11 @@
   "version": "4.0.13",
   "description": "",
   "scripts": {
-    "start:backend": "cd backend && npm run start"
+    "setup:backend": "cd backend && npm install",
+    "setup:frontend": "cd frontend && npm install && npm run build",
+    "setup": "npm run setup:backend && npm run setup:frontend",
+    "start:backend": "cd backend && npm run start",
+    "start:backend:dev": "cd backend && npm run start:dev"
   },
   "repository": {
     "type": "git",
