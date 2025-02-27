@@ -9,10 +9,10 @@ services:
       dockerfile: Dockerfile
       args:
         NODE_ENV: production
-        VUE_APP_WEBHOOK_URL: ${VUE_APP_WEBHOOK_URL}
+        VUE_APP_WEBHOOK_URL: http://localhost:4000
     restart: always
     ports:
-      - "4000"
+      -  4000:4000
     command: 'npm run start:backend'
     tty: true
     env_file: .env

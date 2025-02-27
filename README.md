@@ -70,3 +70,9 @@ app.configure({
   ],
 });
 ```
+
+## Docker
+
+```sh
+docker compose up -d
+```
